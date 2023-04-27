@@ -20,10 +20,7 @@ como reproducir un archivoÂ desdeÂ c++
 #include<time.h>
 #include <stdlib.h>
 #include <windows.h>
-
 #include <mmsystem.h>
-=======
-#include <windows.h>
 
 
 using namespace std;
@@ -62,7 +59,7 @@ int main(){
         switch(opc){
 
             case 1:
-			PlaySound(TEXT(".wav"),NULL,SND_ASYNC);
+			PlaySound(TEXT("ELLA.wav"),NULL,SND_ASYNC);
             break;
             case 2:
             break;
