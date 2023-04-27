@@ -20,10 +20,8 @@ como reproducir un archivoÂ desdeÂ c++
 #include<time.h>
 #include <stdlib.h>
 #include <windows.h>
-
 #include <mmsystem.h>
-=======
-#include <windows.h>
+
 
 
 using namespace std;
@@ -49,14 +47,14 @@ int main(){
         cout<<"______________"<<endl;
         cout<<"   Spotify"<<endl;
         cout<<"______________\n"<<endl;
-        cout<<"1- Reproduccion secuencial."<<endl;
-        cout<<"2-.Reproduccion aleatoria"<<endl;
+        cout<<"1- ReproducciÃ³n secuencial."<<endl;
+        cout<<"2-.ReproducciÃ³n aleatoria"<<endl;
         cout<<"3-.Eliminar"<<endl;
         cout<<"4-.Ver letras"<<endl;
         cout<<"5-.AÃ±adir a favoritos"<<endl;
         cout<<"6-.Anterior"<<endl;
         cout<<"______________"<<endl;
-        cout<<"Ingresa una opcion:";
+        cout<<"Ingresa una opciÃ³n:";
         cin>>opc;
 
         switch(opc){
@@ -76,8 +74,7 @@ int main(){
                 cout<<"1-. Basilisco"<<endl;
                 cout<<"2-. Cafune"<<endl;
                 cout<<"3-. A mis enemigos"<<endl;
-		cout<<"4-. Ella baila sola";
-                cout<<"5-. Salir"<<endl;
+                cout<<"4-. Salir"<<endl;
                 cout<<"Ingrese una opcion:";
                 cin>>letra;
 
