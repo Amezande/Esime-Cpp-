@@ -5,8 +5,6 @@
 
 using namespace std;
 
-cout<<"joan es puto";
-
 int main()
 {
 	//system ("color B1");
@@ -224,14 +222,41 @@ int main()
     				system("cls");
 		   		break;
 		   		case 3: 
+		   		system("cls");  
 		   		cout<<"\n Opcion 3"<<endl;
+		   		cout<<"\tEl saldo de Lorena Azuara es de..."<<saldo<<"...(Pesos MXN)\n";
 		   		system("pause");
-    			system("cls");
+		   		system("cls");
+		   		goto regresa2;
 		   		break;
 		   		case 4: 
 		   		cout<<"\n Opcion 4"<<endl;
-		   			system("pause");
-    				system("cls");
+		   				otro2:
+		   				cout<<"Ingrese la clave de registro de 10 dijitos \n";
+		   				cin>>clave;
+		   				if(clave==1239874569){	
+						}
+						else 
+						{
+							cout<<"��Clave Incorrecta!!\n";
+							goto otro2;
+						}
+						otro3:
+						cout<<"\n";
+		   				cout<<"Ingrese el codigo de seguridad de 4 dijitos \n";
+		   				cin>>cod;
+		   				if(cod==8520){
+						}
+						else 
+						{
+							cout<<"��Clave Incorrecta!!\n";
+							goto otro3;
+						}
+						cout<<"________Su retiro sin tarjeta,ha sido un exito___________\n";
+						cout<<"____________________Vuelva Pronto________________________\n";
+						system("pause");
+						system("cls");
+		   		break;
 		   		break;
 			   }
 		   }
