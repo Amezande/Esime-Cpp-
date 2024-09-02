@@ -19,11 +19,11 @@ void buscarPalabras() {
     getline(cin, cadena);
 
     // Contar palabras en la cadena
-    istringstream stream(cadena);
+    istringstream stream(cadena); //lee y almacena la variable desde externo
     string palabra;
     int contadorPalabras = 0;
 
-    while (stream >> palabra) {
+    while (stream >> palabra) { //lee variables con el operador de extraccion
         contadorPalabras++;
     }
 
