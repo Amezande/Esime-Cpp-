@@ -1,20 +1,36 @@
 #include <iostream>
-#include <string.h>
+#include <sstream> // Para std::istringstream
+#include <string>
 
 using namespace std;
 
-//Declaracion de funciones
-int buscarPalabras(string cadena);
+// Declaración de funciones
+void buscarPalabras();
 
 int main(){
     buscarPalabras();
     return 0;
 }
 
-//funciones definir variables en la funcion
-int buscarPalabras(string cadena){
-    return cadena;
+// Función para buscar y contar palabras en la cadena
+void buscarPalabras() {
+    string cadena;
+    cout << "Cadena a buscar: ";
+    getline(cin, cadena);
+
+    // Contar palabras en la cadena
+    istringstream stream(cadena);
+    string palabra;
+    int contadorPalabras = 0;
+
+    while (stream >> palabra) {
+        contadorPalabras++;
+    }
+
+    cout << "La cadena ingresada es: " << cadena << endl;
+    cout << "Número de palabras: " << contadorPalabras << endl;
 }
+
 
 //Lee una cadena con espacios
 /*cout << "Cadena a buscar: ";
