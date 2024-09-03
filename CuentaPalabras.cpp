@@ -1,6 +1,7 @@
 #include <iostream>
 #include <sstream> // Para std::istringstream
-#include <string>
+#include <cstring>
+#include <ctype.h>
 
 using namespace std;
 
@@ -22,10 +23,18 @@ void buscarPalabras() {
     istringstream stream(cadena); //lee y almacena la variable desde externo
     string palabra;
     int contadorPalabras = 0;
+    int spaces=0;
+   
 
     while (stream >> palabra) { //lee variables con el operador de extraccion
+    //Todo lo que ingrese aquí se hara tantas veces como palabras tenga
         contadorPalabras++;
+        if (isspace(cadena[contadorPalabras]) != 0){
+            spaces++;
+        }
+        cout << "Numero de espacios:"  << spaces << endl;
     }
+
 
     cout << "La cadena ingresada es: " << cadena << endl;
     cout << "Número de palabras: " << contadorPalabras << endl;
